@@ -12,6 +12,7 @@ import Action from "./components/actions";
 import Statehoke from "./components/Statehoke";
 import Statecomp1 from "./components/statecomp1";
 import Statecomp2 from "./components/statecomp2";
+import Usesatefun from "./components/usesatefun";
 import { useState } from "react";
 
 function App() {
@@ -39,13 +40,11 @@ function App() {
     //   </div>
     // </section>
     // {/* <Actions /> */}
-    // <section>
-    //   {/* <Statehoke /> */}
-    //   <Statecomp1 count={count} onClickHandler ={() => setCount(count + 1)} />
-    //   <Statecomp2 count={count} onClickHandler ={() => setCount(count + 1)} />
-    // </section>
     <section>
-
+      {/* <Statehoke /> */}
+      {/* <Statecomp1 count={count} onClickHandler ={() => setCount(count + 1)} />
+      <Statecomp2 count={count} onClickHandler ={() => setCount(count + 1)} /> */}
+      <Usesatefun />
     </section>
   );
 }
