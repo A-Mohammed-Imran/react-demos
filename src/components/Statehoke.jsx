@@ -45,17 +45,28 @@ const Statehoke = () => {
   // );
   // ----------------------------------------------------------
   const [movie, setMovie] = useState([
-    {name: "Thor", rating: 9.5},
-    {name: "Iron man", rating: 10},
-  ])
-  return <section>
-    {movie.map((m) => (
-      <ul key={Math.random()}>
-        <li>Movie name : {m.name}</li>
-        <li>Rating : {m.rating}</li>
-      </ul>
-    ))}
-  </section>;
+    { Mno: 1, name: "Iron man 1", rating: 8 },
+    { Mno: 2, name: "Iron man 2", rating: 8.5 },
+  ]);
+  function addMovies() {
+    setMovie([...movie, { Mno: 3, name: "Iron man 3", rating: 9 }]);
+  }
+  function updateMovies() {
+    setMovie(movie.map((m) => (m.Mno === 1 ? { ...m, name: "Iron man" } : m)));
+  }
+  return (
+    <section>
+      {movie.map((m) => (
+        <ul key={Math.random()}>
+          <li>S.No : {m.Mno}</li>
+          <li>Movie name : {m.name}</li>
+          <li>Rating : {m.rating}</li>
+        </ul>
+      ))}
+      <button onClick={addMovies}>Add movies</button>
+      <button onClick={updateMovies}>Update movies</button>
+    </section>
+  );
 };
 
 export default Statehoke;
