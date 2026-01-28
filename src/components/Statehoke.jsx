@@ -43,24 +43,19 @@ const Statehoke = () => {
   //     </ul>
   //   </section>
   // );
-  const [movi, setMovi] = useState({
-    name: "Your name",
-    rating: 9,
-  });
-  const updateRat = () => {
-    const copyMovi = {
-      ...movi,
-      rating: 9.2,
-    };
-    setMovi(copyMovi);
-  };
-  return (
-    <section>
-      <h1>Movi Name :{movi.name}</h1>
-      <h1>Rating :{movi.rating}</h1>
-      <button onClick={updateRat}>Change rating</button>
-    </section>
-  );
+  // ----------------------------------------------------------
+  const [movie, setMovie] = useState([
+    {name: "Thor", rating: 9.5},
+    {name: "Iron man", rating: 10},
+  ])
+  return <section>
+    {movie.map((m) => (
+      <ul key={Math.random()}>
+        <li>Movie name : {m.name}</li>
+        <li>Rating : {m.rating}</li>
+      </ul>
+    ))}
+  </section>;
 };
 
 export default Statehoke;
