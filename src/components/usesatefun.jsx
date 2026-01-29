@@ -5,7 +5,9 @@ const Usesatefun = () => {
     const initialvalue = 0;
     return initialvalue;
   });
-  const handleClick = () => setCount(count + 1);
+  function handleClick() {
+    setCount(count + 1);
+  }
   return (
     <div>
       <p>initial value :{count}</p>

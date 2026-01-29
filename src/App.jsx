@@ -13,6 +13,9 @@ import Statehoke from "./components/Statehoke";
 import Statecomp1 from "./components/statecomp1";
 import Statecomp2 from "./components/statecomp2";
 import Usesatefun from "./components/usesatefun";
+import Usesatatefun2 from "./components/usesatatefun2";
+import Usestatefun3 from "./components/usesatefun3";
+import Portel from "./components/portel";
 import { useState } from "react";
 
 function App() {
@@ -44,7 +47,10 @@ function App() {
       {/* <Statehoke /> */}
       {/* <Statecomp1 count={count} onClickHandler ={() => setCount(count + 1)} />
       <Statecomp2 count={count} onClickHandler ={() => setCount(count + 1)} /> */}
-      <Usesatefun />
+      {/* <Usesatefun /> */}
+      {/* <Usesatatefun2 /> */}
+      {/* <Usestatefun3 /> */}
+      <Portel />
     </section>
   );
 }
