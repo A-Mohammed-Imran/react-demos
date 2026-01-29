@@ -1,5 +1,6 @@
 import React from "react";
 import Portalprops from "./portalprops";
+
 const Portel = () => {
   const [inputValue, setInputValue] = React.useState("");
   const [copied, setCopied] = React.useState(false);
@@ -10,16 +11,18 @@ const Portel = () => {
     });
   };
   return (
-    <div>
-      <input
-        type="text"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-        placeholder="Enter somthing to copy"
-      />
-      <button onClick={copyHandel}>Copy Text</button>
-      <Portalprops copied={copied} />
-    </div>
+    (
+      <div>
+        <input
+          type="text"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          placeholder="Enter somthing to copy"
+        />
+        <button onClick={copyHandel}>Copy Text</button>
+        <Portalprops copied={copied} />
+      </div>
+    )
   );
 };
 
