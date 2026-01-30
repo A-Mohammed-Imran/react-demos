@@ -16,6 +16,8 @@ import Usesatefun from "./components/usesatefun";
 import Usesatatefun2 from "./components/usesatatefun2";
 import Usestatefun3 from "./components/usesatefun3";
 import Portel from "./components/portel";
+import Useeffect from "./components/useeffect";
+import Useeffect1 from "./components/useeffect1"
 import { useState } from "react";
 
 function App() {
@@ -50,7 +52,9 @@ function App() {
       {/* <Usesatefun /> */}
       {/* <Usesatatefun2 /> */}
       {/* <Usestatefun3 /> */}
-      <Portel />
+      {/* <Portel /> */}
+      {/* <Useeffect /> */}
+      <Useeffect1 />
     </section>
   );
 }
